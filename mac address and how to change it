@@ -1,0 +1,42 @@
+MAC ADDRES
+
+	Significa Media Access Control e é:
+
+		- permanente
+		- físico 
+		- único
+
+	É posto lá pelo fabricante
+
+	É parecido com o IP, só que IP é para toda a internet e MAC é numa rede local 
+
+	é usado para identificar dispositivos e transferir dados entre eles
+
+	todo pacote de informação na internet tem um mac de origem e um mac de destino
+
+	o mac é o ether disponivel em cada dispositivo de rede quando os listamos com o comando ifconfig
+
+
+
+
+	PORQUÊ MUDÁ-LO?
+
+		- é um endereço físico único e mantê-lo original pode ser perigoso
+
+		- aumenta a anonimidade na rede
+
+		- pode permitir fazer coisas que o meu dispositivo não é capaz de fazer
+
+			- porque um website/maquina pode restringir uma certa gama de mac addresses porque sabe que é de um dado modelo ao qual querem restringir.
+
+	MUDAR MAC ADDRESS
+
+		1 - Desligar o dispositivo:
+
+			- sudo ifconfig wlan0 down
+
+		2 - mudar o mac para um nr a escolha:
+
+			- sudo ifconfig wlan0 hw ether 00:11:22:33:44:55
+
+			- o ether deve sempre começar com 00.

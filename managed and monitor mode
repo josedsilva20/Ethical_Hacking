@@ -1,0 +1,13 @@
+Para ver a lista de redes wifi:
+
+	- iwconfig
+
+Por default as redes vêm em estado managed
+
+Para trocar para monitor mode:
+
+	- deitar abaixo a rede: ifconfig wlan0 down
+
+	- matar processos de rede: airmon-ng check kill
+
+	
